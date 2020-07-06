@@ -24,7 +24,7 @@ for (let i = 0; i < s.length; i++) {
         if (stack.length == 0) {
             stack.push(i)
         } else {
-            //i - stack[stack.length - 1] represents the length
+            //'i - stack[stack.length - 1]' represents the length
             //of the longest substring
             max = Math.max(max, i - stack[stack.length - 1])
         }
