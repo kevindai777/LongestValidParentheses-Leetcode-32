@@ -20,7 +20,8 @@ for (let i = 0; i < s.length; i++) {
     //Pop out if it's a closing parentheses
     } else {
         stack.pop()
-        //If the stack is empty, push in new current index
+        //If the stack is empty, we don't have a valid parentheses since we start out with [-1]
+        //So, we push in new current index
         if (stack.length == 0) {
             stack.push(i)
         } else {
